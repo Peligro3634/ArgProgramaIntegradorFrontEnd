@@ -1,0 +1,12 @@
+#tituloexp{
+    text-align: center;
+}
+.row{
+    padding: auto;
+    
+    background-color: #92E5AB;
+    
+}
+h1,h3{
+    display: inline;
+}
