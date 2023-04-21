@@ -2,10 +2,13 @@
     text-align: center;
 }
 .row{
-    position: absolute;
-    align-items: center;
-    justify-content: center;
+    
     background-color: #92E5AB;
     padding: 20px;
     
 }
+.col-lg-4{
+    display: flex;
+    justify-content: space-around;
+}
+

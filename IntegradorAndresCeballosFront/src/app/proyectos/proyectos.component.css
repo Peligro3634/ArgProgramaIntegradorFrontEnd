@@ -1,0 +1,16 @@
+#titulopro{
+    text-align: center;
+}
+.row{
+    padding: 20px;
+    background-color: #92E5AB;
+}
+.container{
+    margin-top: 20px;
+    width: auto;
+
+}
+.titulo, .imagen{
+    display: inline-block;
+    text-align: center;
+}
