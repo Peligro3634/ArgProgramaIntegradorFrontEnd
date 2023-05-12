@@ -5,3 +5,11 @@ flex: 1;
 height: 1px;
 background: #eee;
 }
+*{
+    background-color: #5AD27E;
+}
+
+input, button{
+    border-color: black;
+    color: black;
+}
