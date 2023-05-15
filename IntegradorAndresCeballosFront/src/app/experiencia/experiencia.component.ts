@@ -11,7 +11,7 @@ import { Experiencia } from '../model/experiencia';
 export class ExperienciaComponent implements OnInit{
   expe: Experiencia[] = [];
 
-  constructor(private sExperiencia: SExperienciaService, private tokenService: TokenService) { }
+  constructor(private sExperience: SExperienciaService, private tokenService: TokenService) { }
 
   isLogged = false;
 
@@ -25,12 +25,12 @@ export class ExperienciaComponent implements OnInit{
   }
 
   cargarExperiencia(): void {
-    this.sExperiencia.list().subscribe(data => { this.expe = data; })
+    this.sExperience.list().subscribe{(data) => { this.expe = data; }}
   }
 
   delete(id?: number){
     if(id != undefined){
-      this.sExperiencia.delete(id).subscribe(
+      this.sExperience.delete(id).subscribe(
         data => {
           this.cargarExperiencia();
         }, err => {

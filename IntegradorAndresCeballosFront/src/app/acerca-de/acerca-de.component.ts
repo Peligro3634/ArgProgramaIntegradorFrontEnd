@@ -13,7 +13,8 @@ export class AcercaDeComponent implements OnInit{
   constructor(public PersonaService: PersonaService) { }
 
 ngOnInit(): void {
-  this.PersonaService.getPersona().subscribe(data => {this.persona = data})
+  this.PersonaService.getPersona().subscribe
+  {(data: persona) => {this.persona = data}}
 }
 
 }
