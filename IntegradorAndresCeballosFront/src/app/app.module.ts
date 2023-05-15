@@ -14,6 +14,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+import { interceptorProvider } from './service/interceptor-service';
+import { NewExperiencaComponent } from './experiencia/new-experienca/new-experienca.component';
 
 
 @NgModule({
@@ -28,15 +31,20 @@ import { LoginComponent } from './login/login.component';
     FooterComponent,
     HomeComponent,
     LoginComponent,
+    NewExperiencaComponent,
+     
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
