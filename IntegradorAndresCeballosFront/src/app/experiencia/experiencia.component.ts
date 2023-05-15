@@ -3,6 +3,7 @@ import { SExperienciaService } from '../service/s-experiencia';
 import { TokenService } from '../service/token.service';
 import { Experiencia } from '../model/experiencia';
 
+
 @Component({
   selector: 'app-experiencia',
   templateUrl: './experiencia.component.html',
@@ -25,7 +26,9 @@ export class ExperienciaComponent implements OnInit{
   }
 
   cargarExperiencia(): void {
-    this.sExperience.list().subscribe{(data) => { this.expe = data; }}
+    this.sExperience.list().subscribe(
+      data => { 
+        this.expe = data;})   
   }
 
   delete(id?: number){
