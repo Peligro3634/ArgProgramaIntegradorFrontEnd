@@ -11,18 +11,22 @@ import { Experiencia } from 'src/app/model/experiencia';
 export class NewExperiencaComponent implements OnInit{
   nombreE: string = "";
   descripcionE: string = "";
-  constructor(private SExperienciaService: SExperienciaService, private Router: Router){
+  constructor(private sExperiencia: SExperienciaService, private router: Router){
 
   }
-  ngOnInit(): void {
-    
+  ngOnInit(): void { 
   }
 
   onCreate(): void {
     const expe = new Experiencia(this.nombreE, this.descripcionE);
-    this.SExperienciaService.save(expe).subscribe(
-      data=>
-      
+    this.sExperiencia.save(expe).subscribe(
+      data => {
+        alert("Experiencia añadida");
+        this.router.navigate(['']);
+      }, err => {
+        alert("Falló");
+        this.router.navigate(['']);
+      }
     )
   }
 
