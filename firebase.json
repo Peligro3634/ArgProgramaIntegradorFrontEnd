@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/integrador-andres-ceballos-front",
+    "public": "dist\\integrador-andres-ceballos=front",
     "ignore": [
       "firebase.json",
       "**/.*",
